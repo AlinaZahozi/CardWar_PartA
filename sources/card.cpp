@@ -7,6 +7,8 @@ using namespace std;
 
 namespace ariel{
 
+    int Card::number_of_cards = 0;
+
     // Constructor
     Card::Card(string typ , string val){
         this->card_type = typ;

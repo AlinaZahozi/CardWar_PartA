@@ -7,11 +7,12 @@ using namespace std;
 namespace ariel{
 
     class Card {
-    int number_of_cards;
+        
     const string card_type;
     const string card_value;
   
     public:
+        static int number_of_cards;
         // Constructor
         Card(string,string);
 
