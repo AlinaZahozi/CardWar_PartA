@@ -32,11 +32,11 @@ namespace ariel{
 
     // Setter
     void Game::set_first_player(Player){
-        return 0;
+        
     }
 
-    void sGame::et_second_player(Player){
-        return 0;
+    void Game::set_second_player(Player){
+
     }
 
     // To string
@@ -47,31 +47,31 @@ namespace ariel{
 
     // Methods
     void playTurn(){
-        return 0;
+        
     }
 
     void printLastTurn(){
-        return 0;
+        
     }
 
     void playAll(){
-        return 0;
+        
     }
 
     void printWiner(){
-        return 0;
+        
     }
 
     void printLog(){
-        return 0;
+        
     }
 
     void printStats(){
-        return 0;
+        
     }
 
     void add_to_log(string){
-        return 0;
+        
     }
 
 }
