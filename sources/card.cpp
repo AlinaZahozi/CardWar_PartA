@@ -7,13 +7,10 @@ using namespace std;
 namespace ariel{
 
     // Constructor
-    Card::Card(){
-        
+    Card::Card(string typ , int val){
+        this->card_type = typ;
+        this->card_value = int;
     }
-
-    // Getters 
-
-    // Setters 
 
     // To string
     string Card::to_string(){
