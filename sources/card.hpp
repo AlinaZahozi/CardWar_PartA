@@ -7,7 +7,7 @@ using namespace std;
 namespace ariel{
 
     class Card {
-    static int number_of_cards;
+    int number_of_cards;
     const string card_type;
     const string card_value;
   
