@@ -11,7 +11,7 @@ namespace ariel{
     class Player {
     private:  
         string player_name;
-        const int player_number;
+        int player_number;
         bool is_availible;
         stack<Card> cards;
         int num_of_taken_cards;
