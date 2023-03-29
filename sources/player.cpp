@@ -7,8 +7,6 @@ using namespace std;
 
 namespace ariel{
 
-    int Player::total_wins = 0;
-
     // Constructor
     Player::Player(string name) {
         this->player_name = name;
@@ -33,6 +31,10 @@ namespace ariel{
 
     string Player::get_cards_won(){
         return this->cards_won;
+    }
+
+    int Player::get_total_wins(){
+        return this->total_wins;
     }
 
     // Setter

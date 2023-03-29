@@ -16,10 +16,11 @@ namespace ariel{
         stack<Card> cards;
         int num_of_taken_cards;
         string cards_won;
-        
-    public:
-        static int total_wins; 
+        int total_wins;
 
+
+    public: 
+    
         // Constructor
         Player(){}
         Player(string);
@@ -31,6 +32,7 @@ namespace ariel{
         stack<Card> get_cards();
         int get_num_of_taken_cards();
         string get_cards_won();
+        int get_total_wins();
 
         // Setters
         void set_player_name(string);
