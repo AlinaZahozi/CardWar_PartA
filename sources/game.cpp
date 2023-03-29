@@ -47,31 +47,31 @@ string Game::to_string(){
 
 
 // Methods
-void playTurn(){
+void Game::playTurn(){
     cout << "ToDo";
 }
 
-void printLastTurn(){
+void Game::printLastTurn(){
     cout << "ToDo";
 }
 
-void playAll(){
+void Game::playAll(){
     cout << "ToDo";
 }
 
-void printWiner(){
+void Game::printWiner(){
     cout << "ToDo";   
 }
 
-void printLog(){
+void Game::printLog(){
     cout << "ToDo";  
 }
 
-void printStats(){
+void Game::printStats(){
     cout << "ToDo";    
 }
 
-void add_to_log(string){
+void Game::add_to_log(string){
     cout << "ToDo";   
 }
 
