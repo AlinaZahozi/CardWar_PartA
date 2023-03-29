@@ -1,8 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "sources/player.hpp"
-#include "sources/card.hpp"
+#include "player.hpp"
 using namespace std;
 
 

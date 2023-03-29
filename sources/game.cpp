@@ -1,11 +1,8 @@
 #include <iostream>
 #include <string>
-using namespace std;
-
 #include "game.hpp"
 #include "player.hpp"
-#include "card.hpp"
-
+using namespace std;
 
 
 namespace ariel{
