@@ -11,7 +11,6 @@ namespace ariel{
     Card::Card(string typ , string val){
         this->card_type = typ;
         this->card_value = val;
-        Card::number_of_cards++;
     }
 
     int Card::calculate_card_value(){
