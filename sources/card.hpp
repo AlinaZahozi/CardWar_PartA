@@ -7,8 +7,8 @@ namespace ariel{
 
     class Card {
         
-    const string card_type;
-    const string card_value;
+    string card_type;
+    string card_value;
   
     public:
         static int number_of_cards;
