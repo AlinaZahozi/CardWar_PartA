@@ -25,6 +25,10 @@ namespace ariel{
         return this->cards;
     }
 
+    bool Player::get_is_availible(){
+        return this->is_availible;
+    }
+
     int Player::get_num_of_taken_cards(){
         return this->num_of_taken_cards;
     }
