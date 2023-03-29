@@ -55,7 +55,7 @@ namespace ariel{
         return 0;
     }
 
-    int Player::cardeTaken(){
+    int Player::cardesTaken(){
         return 0;
     }
 
