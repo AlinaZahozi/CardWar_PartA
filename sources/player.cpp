@@ -39,11 +39,11 @@ namespace ariel{
 
     // Setter
     void Player::set_player_name(string name) {
-        
+        cout << " ";
     }
 
     void Player::set_is_availible(bool b){
-        
+        cout << " ";
     }
 
     // To string
