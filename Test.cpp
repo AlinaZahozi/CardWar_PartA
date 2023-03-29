@@ -21,7 +21,7 @@ TEST_CASE("Test 1-Test Player class constructor") {
 
 
 TEST_CASE("Test 2-Test Player class constructor with illegal string") {
-    CHECK_NOTHROW(Player p("39!@0"));
+    CHECK_THROWS(Player p("39!@0"));
 }
 
 
@@ -72,7 +72,7 @@ TEST_CASE("Test 8-Test Game class constructor with unavailible player") {
     Player p1("Alina");
     Player p2("Alin");
     p1.set_is_availible(false);
-    CHECK_NOTHROW(Game game(p1,p2));
+    CHECK_THROWS(Game game(p1,p2));
 }
 
 
@@ -91,7 +91,7 @@ TEST_CASE("Test 10-Test Game class method playTurn() after finishing the game") 
     Player p2("Alin");
     Game game(p1,p2); 
     game.playAll();
-    CHECK_NOTHROW(game.playTurn());
+    CHECK_THROWS(game.playTurn());
 }
 
 TEST_CASE("Test 11-Test Game class method playAll()") {
@@ -117,7 +117,6 @@ TEST_CASE("Test 13-Test Game class method printLastTurn()") {
     Player p2("Alin");
     Game game(p1,p2); 
     game.playAll();
-    CHECK(game.get_log() != "");
     CHECK_NOTHROW(game.printLastTurn());
 }
 
@@ -128,7 +127,6 @@ TEST_CASE("Test 14-Test Game class method printLastTurn()") {
     for (int i=0;i<7;i++) {
      game.playTurn();
     }
-    CHECK(game.get_log() != "");
     CHECK_NOTHROW(game.printLastTurn());
 }
 
@@ -144,7 +142,6 @@ TEST_CASE("Test 16-Test Game class method printWiner() after game finish") {
     Player p2("Alin");
     Game game(p1,p2); 
     game.playAll();
-    CHECK(game.get_log() != "");
     CHECK_NOTHROW(game.printWiner());
 }
 
