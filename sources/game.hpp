@@ -1,10 +1,9 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include "sources/player.hpp"
+#include "sources/card.hpp"
 using namespace std;
-
-#include "Player.hpp"
-#include "Card.hpp"
 
 
 namespace ariel{
