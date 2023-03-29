@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <cctype>
 using namespace std;
 
 namespace ariel{
@@ -8,11 +9,11 @@ namespace ariel{
     class Card {
     static int number_of_cards;
     const string card_type;
-    const int card_value;
+    const string card_value;
   
     public:
         // Constructor
-        Card(string,int);
+        Card(string,string);
 
         // Getters 
         int get_number_of_cards(){
@@ -23,9 +24,12 @@ namespace ariel{
             return card_type;
         }
 
-        int get_card_value(){
+        string get_card_value(){
             return card_value;
         }
+
+        int calculate_card_value();
+
 
         // To string
         string to_string();
