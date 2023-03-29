@@ -10,7 +10,8 @@ namespace ariel{
 
     // Constructor
     Card::Card(string typ , string val){
-        
+        this->card_type = typ;
+        this->card_value = val;
     }
 
     int Card::calculate_card_value(){

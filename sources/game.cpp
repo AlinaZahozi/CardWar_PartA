@@ -9,7 +9,8 @@ namespace ariel{
 
 // Constructor
 Game::Game(Player p1 ,Player p2){
-       
+    this->first_player = p1;
+    this->second_player = p2; 
 }
 
 // Getters 
@@ -47,30 +48,32 @@ string Game::to_string(){
 
 // Methods
 void playTurn(){
-        
+    cout << "ToDo";
 }
 
 void printLastTurn(){
-    
+    cout << "ToDo";
 }
 
 void playAll(){
-    
+    cout << "ToDo";
 }
 
 void printWiner(){
-        
+    cout << "ToDo";   
 }
 
 void printLog(){
-        
+    cout << "ToDo";  
 }
 
 void printStats(){
-        
+    cout << "ToDo";    
 }
 
 void add_to_log(string){
-        
+    cout << "ToDo";   
 }
+
+
 }
