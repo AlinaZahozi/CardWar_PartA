@@ -43,7 +43,7 @@ namespace ariel{
 
         // Methods
         int stacksize();
-        int cardeTaken();
+        int cardesTaken();
     };
 
 }

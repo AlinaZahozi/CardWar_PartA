@@ -43,20 +43,20 @@ TEST_CASE("Test 4-Test Player class method stacksize()") {
     CHECK(p1.stacksize() == 0 || p2.stacksize() == 0);
 }
 
-TEST_CASE("Test 5-Test Player class method cardeTaken()") {
+TEST_CASE("Test 5-Test Player class method cardesTaken()") {
     Player p1("Alina");
     Player p2("Alin");
     Game game(p1,p2); 
     game.playTurn();
-    CHECK((p1.cardeTaken() + p2.cardeTaken()) >= 1);
+    CHECK((p1.cardesTaken() + p2.cardesTaken()) >= 1);
 }
 
-TEST_CASE("Test 6-Test Player class method cardeTaken()") {
+TEST_CASE("Test 6-Test Player class method cardesTaken()") {
     Player p1("Alina");
     Player p2("Alin");
     Game game(p1,p2); 
     game.playAll();
-    CHECK(p1.cardeTaken() == 26 || p2.cardeTaken() == 26);
+    CHECK(p1.cardesTaken() == 26 || p2.cardesTaken() == 26);
 }
 
 TEST_CASE("Test 7-Test Game class constructor") {
