@@ -9,7 +9,7 @@ namespace ariel{
 
     // Constructor
     Player::Player(string name) {
-        this->player_name = name;
+        
     }
 
     // Getters 
@@ -39,11 +39,11 @@ namespace ariel{
 
     // Setter
     void Player::set_player_name(string name) {
-        this->player_name = name;
+        return 0;
     }
 
     void Player::set_is_availible(bool b){
-        this->is_availible = b;
+        return 0;
     }
 
     // To string

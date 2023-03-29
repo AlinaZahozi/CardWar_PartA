@@ -9,10 +9,7 @@ namespace ariel{
 
     // Constructor
     Game::Game(Player p1 ,Player p2){
-        this->first_player = p1;
-        this->second_player = p2; 
-        this->log = "";
-        this->number_of_draws = 0;
+       
     }
 
     // Getters 
