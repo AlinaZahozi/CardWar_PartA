@@ -71,7 +71,7 @@ TEST_CASE("Test 7-Test Game class constructor") {
 TEST_CASE("Test 8-Test Game class constructor with unavailible player") {
     Player p1("Alina");
     Player p2("Alin");
-    p1.set_is_availible(false);
+    Game game(p1,p2);
     CHECK_THROWS(Game(p1,p2));
 }
 
