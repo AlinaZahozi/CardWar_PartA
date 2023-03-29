@@ -20,7 +20,7 @@ TEST_CASE("Test 1-Test Player class constructor") {
 
 
 TEST_CASE("Test 2-Test Player class constructor with illegal string") {
-    CHECK_THROWS(Player p("39!@0"));
+    CHECK_THROWS(Player("39!@0"));
 }
 
 
@@ -39,7 +39,8 @@ TEST_CASE("Test 4-Test Player class method stacksize()") {
     Player p2("Alin");
     Game game(p1,p2); 
     game.playAll();
-    CHECK(p1.stacksize() == 0 || p2.stacksize() == 0);
+    CHECK(p1.stacksize() == 0);
+    CHECK(p2.stacksize() == 0);
 }
 
 TEST_CASE("Test 5-Test Player class method cardesTaken()") {
@@ -71,7 +72,7 @@ TEST_CASE("Test 8-Test Game class constructor with unavailible player") {
     Player p1("Alina");
     Player p2("Alin");
     p1.set_is_availible(false);
-    CHECK_THROWS(Game game(p1,p2));
+    CHECK_THROWS(Game(p1,p2));
 }
 
 
